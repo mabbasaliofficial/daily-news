@@ -30,16 +30,16 @@ const displayNews = (allNews) => {
             news.author.img
           }" style="height: 50px; width: 50px;" class="rounded-circle p-1" alt="">
           <div class="d-lg-flex flex-lg-row justify-content-center align-items-center">
-          <div class="mt-5 mt-lg-0">
+          <div class="mx-lg-0 mx-5 mt-2 mt-lg-0">
             <small class="fw-semibold">${news.author.name}</small>
             <br>
             <small>${news.author.published_date.slice(0, 10)}</small>
           </div>
-          <div class="mx-5 mt-5 mt-lg-0">
+          <div class="mx-5 mt-2 mt-lg-0">
           <span class="p-1"><i class="fa-solid fa-eye"></i></span>
           <span class="p-1">${news.total_view}</span>
           </div>
-          <div class="mx-5 mt-5 mt-lg-0">
+          <div class="mx-5 mt-2 mt-lg-0">
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Details
@@ -111,9 +111,6 @@ const showNews = (id) => {
   loadNews(id);
   toggleSpinner(true);
 };
-// function showNews(id) {
-//   loadNews(id);
-// }
 
 const toggleSpinner = (isLoading) => {
   const loaderSection = document.getElementById("loader");
