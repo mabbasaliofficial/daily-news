@@ -33,7 +33,7 @@ const displayNews = (allNews) => {
           <div class="mt-5 mt-lg-0">
             <small class="fw-semibold">${news.author.name}</small>
             <br>
-            <small>${news.author.published_date.slice(0,10)}</small>
+            <small>${news.author.published_date.slice(0, 10)}</small>
           </div>
           <div class="mx-5 mt-5 mt-lg-0">
           <span class="p-1"><i class="fa-solid fa-eye"></i></span>
