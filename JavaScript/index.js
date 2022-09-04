@@ -98,6 +98,9 @@ const setCategory = (allCategory) => {
 
 loadCategory();
 
-function showNews(id) {
+showNews = (id) => {
   loadNews(id);
 }
+// function showNews(id) {
+//   loadNews(id);
+// }
