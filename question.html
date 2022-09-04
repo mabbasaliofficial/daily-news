@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mt-5">
+        <img src="${
+          news.author.img
+        }" style="height: 50px; width: 50px;" class="rounded-circle p-1" alt="">
+        <div class="">
+        <div class="me-5">
+          <small class="fw-semibold">${news.author.name}</small>
+          <br>
+          <small>${news.author.published_date}</small>
+        </div>
+        <div class="mx-5">
+        <span class="p-1"><i class="fa-solid fa-eye"></i></span>
+        <span class="p-1">${news.total_view}</span>
+        </div>
+        </div>
+        </div>
+</body>
+</html>
