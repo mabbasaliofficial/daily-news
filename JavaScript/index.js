@@ -102,17 +102,16 @@ loadCategory();
 const showNews = (id) => {
   loadNews(id);
   toggleSpinner(true);
-}
+};
 // function showNews(id) {
 //   loadNews(id);
 // }
 
-const toggleSpinner = isLoading => {
-  const loaderSection = document.getElementById('loader');
-  if(isLoading){
-    loaderSection.classList.remove('d-none');
+const toggleSpinner = (isLoading) => {
+  const loaderSection = document.getElementById("loader");
+  if (isLoading) {
+    loaderSection.classList.remove("d-none");
+  } else {
+    loaderSection.classList.add("d-none");
   }
-  else{
-    loaderSection.classList.add('d-none');
-  }
-}
+};
